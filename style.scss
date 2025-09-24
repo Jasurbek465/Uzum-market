@@ -4,14 +4,15 @@ p {
 
 body {
     font-family: 'Roboto';
+    overflow-x: hidden;
 }
 
 .product-section {
     max-width: 80%;
     margin: 0 auto;
     #product-card{
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
     }
     .product{
         // display: flex;
