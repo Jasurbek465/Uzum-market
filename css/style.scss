@@ -539,8 +539,156 @@ body {
       width: auto;
       background-color: #e6e8ed;
     }
-    .btn-primary:hover{
+    .btn-primary:hover {
       background-color: #c2c5cc;
     }
   }
+}
+.favorite-card {
+  align-items: center;
+  color: #1f2026;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 70px;
+  width: 100%;
+  .favorite-card__icon {
+    width: 128px;
+    height: 128px;
+  }
+  .favorite-card__title {
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-top: 24px;
+  }
+  .favorite-card__description {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-top: 16px;
+    .favorite-card__note {
+      display: inline-block;
+    }
+  }
+  .favorite-card__actions {
+    align-items: center;
+    color: #1f2026;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 70px;
+    width: 100%;
+    .favorite-card__btn {
+      background-color: #7000ff;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      height: 38px;
+      padding: 7px 14px;
+      text-decoration: none;
+      transition: all .1s linear;
+    }
+    .favorite-card__btn:hover {
+      background-color: #7f4dff;
+    }
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal oynaning o‘zi */
+.modal__content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  width: 360px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Yopish belgisi */
+.modal__close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 23px;
+  cursor: pointer;
+  color: #777;
+}
+
+/* Logotip va sarlavha */
+.modal__header img {
+  width: 80px;
+  margin-bottom: 12px;
+}
+.modal__header h2 {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+/* Input */
+.modal__input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 16px;
+  outline: none;
+}
+.modal__input:focus {
+  border-color: #8a2be2;
+}
+
+/* Tugma */
+.modal__btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #7f00ff;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.modal__btn:hover {
+  background: #6a00d8;
+}
+
+/* Pastdagi matn */
+.modal__text {
+  font-size: 12px;
+  color: #555;
+  margin-top: 16px;
+  line-height: 1.4;
+}
+.modal__text a {
+  color: #6a00d8;
+  text-decoration: none;
+}
+
+/* “Uzum ID nima?” */
+.modal__link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #6a00d8;
+  text-decoration: none;
+}
+
+/* Fade animatsiya */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }

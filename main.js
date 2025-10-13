@@ -1,6 +1,6 @@
 const sproducts = async () => {
-  const url = "products.json";
-  const productsContainer = document.querySelector("#product-card");
+  const url = 'products.json';
+  const productsContainer = document.querySelector('#product-card');
   try {
     const response = await fetch(url);
 
@@ -36,11 +36,28 @@ const sproducts = async () => {
             </div>
         `;
     });
-
   } catch (error) {
     console.error(error);
   }
-}
+};
 
 sproducts();
 
+const openModal = document.getElementById('openModal');
+const modal = document.getElementById('loginModal');
+const closeModal = document.getElementById('closeModal');
+
+openModal.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal.style.display = 'flex';
+});
+
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});

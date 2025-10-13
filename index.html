@@ -75,11 +75,11 @@
           </div>
 
           <div class="header-bottom__right">
-            <a href="#!" class="login">
+            <a href="#!" class="login" id="openModal">
               <img src="img/icon/human.svg" alt="" />
               Kirish
             </a>
-            <a href="#!" class="favorites">
+            <a href="saralangan.html" class="favorites">
               <img src="img/icon/hart.svg" alt="" />
               Saralangan
             </a>
@@ -242,6 +242,34 @@
         </div>
       </div>
     </section>
+
+    <!-- MODAL !!! -->
+    <div class="modal" id="loginModal">
+      <div class="modal__content">
+        <span class="modal__close" id="closeModal">x</span>
+        <div class="modal__header">
+          <img src="" alt="LOGO Uzum Market" />
+          <h2>Uzum Market’ga kirish</h2>
+        </div>
+
+        <input
+          type="text"
+          placeholder="+998 00 000-00-00"
+          class="modal__input"
+        />
+
+        <button class="modal__btn">Kodini olish</button>
+
+        <p class="modal__text">
+          Davom etgan holda men
+          <a href="#">shaxsiy ma'lumotlarni qayta ishlash siyosatiga</a> rozilik
+          bildiraman va <a href="#">Uzum ID ommaviy oferta</a> bilan rozi
+          bo‘laman.
+        </p>
+
+        <a href="#" class="modal__link">Uzum ID nima?</a>
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>
