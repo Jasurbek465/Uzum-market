@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -302,6 +302,7 @@ body {
 }
 .header-bottom .header-bottom__top .header-bottom__left {
   display: flex;
+  align-items: center;
 }
 
 .search-box {
@@ -316,6 +317,51 @@ body {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   padding-left: 16.62px;
+  outline: none;
+}
+
+.lang-select {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lang-current {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.lang-options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: none;
+  min-width: 120px;
+  margin-top: 5px;
+  z-index: 10;
+}
+
+.lang-options div {
+  padding: 8px 12px;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.lang-options div:hover {
+  background: #f3f3f3;
+}
+
+.lang-select.active .lang-options {
+  display: block;
 }
 
 .search-wrapper {
@@ -682,12 +728,20 @@ body {
 .footer .footer__links .footer__column .footer__apps {
   display: flex;
   align-items: center;
+  margin-left: -12px;
 }
 .footer .footer__links .footer__column .footer__app-link {
   gap: 5px;
 }
 .footer .footer__links .footer__column .AppStore {
-  margin-inline: 29px;
+  margin-right: 14px;
+}
+.footer .footer__links .footer__column .footer__app-img {
+  width: 24px;
+  height: 24px;
+}
+.footer .footer__links .footer__column .Apple-Logo {
+  width: 40px;
 }
 .footer .footer__links .footer__column .footer__apps > a {
   font-weight: 500;
@@ -715,6 +769,7 @@ body {
   width: 32px;
   height: 32px;
   margin-top: 16px;
+  cursor: pointer;
 }
 .footer .footer__bottom {
   display: flex;
@@ -722,6 +777,10 @@ body {
   padding-bottom: 16px;
   border-top: 1px solid black;
   justify-content: space-between;
+}
+.footer .footer__bottom .footer__policies {
+  display: flex;
+  gap: 15.9px;
 }
 .footer .footer__bottom .footer__policies .footer__policy-link {
   font-weight: 500;
@@ -735,7 +794,11 @@ body {
   font-size: 11px;
   line-height: 14px;
   vertical-align: middle;
-  color: #8C8E98;
+  color: #8c8e98;
+}
+.footer .footer__icons {
+  display: flex;
+  gap: 5px;
 }
 
 /* Modal oynaning o‘zi */

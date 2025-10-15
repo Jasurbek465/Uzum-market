@@ -70,3 +70,26 @@ var swiper = new Swiper('.mySwiper', {
     el: '.swiper-pagination',
   },
 });
+
+const langSelect = document.getElementById('langSelect');
+const langText = langSelect.querySelector('.lang-text');
+const options = langSelect.querySelectorAll('.lang-options div');
+
+langSelect.querySelector('.lang-current').addEventListener('click', (e) => {
+  e.stopPropagation();
+  langSelect.classList.toggle('active');
+});
+
+options.forEach((opt) => {
+  opt.addEventListener('click', () => {
+    const current = langText.textContent;
+    langText.textContent = opt.textContent;
+
+    options.forEach((o) => (o.style.display = 'block'));
+    opt.style.display = 'none';
+
+    langSelect.classList.remove('active');
+  });
+});
+
+window.addEventListener('click', () => langSelect.classList.remove('active'));

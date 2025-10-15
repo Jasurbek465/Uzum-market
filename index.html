@@ -37,17 +37,25 @@
               <a href="#!" class="faq-link">Savol-javoblar</a>
               <a href="#!" class="orders-link">Buyurtmalarim</a>
             </div>
+
             <div class="header-top__right">
-              <a href="#!" class="lang-flag">
-                <img src="img/icon/flag.svg" alt="Bayroq" />
-              </a>
-              <p class="lang-text">Oʻzbekcha</p>
+              <div class="lang-select" id="langSelect">
+                <div class="lang-current">
+                  <img src="img/icon/flag.svg" alt="Bayroq" />
+                  <span class="lang-text">Oʻzbekcha</span>
+                </div>
+
+                <div class="lang-options">
+                  <div data-lang="ru">Русский</div>
+                  <div data-lang="en">English</div>
+                  <div data-lang="oz">O'zbek</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Pastki header -->
       <div class="header-bottom">
         <div class="header-bottom__top">
           <div class="header-bottom__left">
@@ -58,7 +66,8 @@
                   alt="Uzum Market logotipi"
                   width="247"
                   height="32"
-              /></a>
+                />
+              </a>
             </div>
 
             <div class="search-section">
@@ -319,7 +328,13 @@
           <div class="footer__column">
             <b class="footer__title">Ilovani yuklab olish</b>
             <div class="footer__apps">
-              <a href="#!" class="footer__app-link AppStore">AppStore</a>
+              <a href="#!" class="footer__app-link AppStore">
+                <img
+                  class="footer__app-img Apple-Logo"
+                  src="img/Apple-Logo.png"
+                  alt=""
+                />AppStore
+              </a>
               <a href="#!" class="footer__app-link">
                 <img
                   src="img/play-market.svg"
