@@ -51,6 +51,7 @@ body {
 .product-section {
   max-width: 80%;
   margin: 0 auto;
+  margin-top: 48px;
 }
 .product-section #product-card {
   display: flex;
@@ -172,6 +173,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 14px;
 }
 
 .header-top {
@@ -315,9 +317,7 @@ body {
   border-bottom-left-radius: 4px;
   padding-left: 16.62px;
 }
-.search-box > input:active {
-  border: none;
-}
+
 .search-wrapper {
   display: flex;
   align-items: center;
@@ -562,6 +562,27 @@ body {
   background-color: #7f4dff;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -570,6 +591,151 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+  background: #f2f4f7;
+  border: 1px solid #36363f;
+  cursor: pointer;
+  padding-block: 11.25px;
+  padding-left: 14px;
+  padding-right: 16px;
+  opacity: 50%;
+  border-radius: 50px;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 16px;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 16px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: gray;
+}
+
+.mySwiper {
+  border-radius: 18px;
+}
+
+.product-name {
+  margin-bottom: 21px;
+}
+.product-name .info {
+  display: flex;
+  align-items: center;
+  gap: 16.5px;
+}
+.product-name .info .title-h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  vertical-align: middle;
+  color: #1f2025;
+}
+.product-name .info .info-arrow {
+  cursor: pointer;
+  padding: 10.87px 13.5px;
+  border-radius: 50px;
+}
+
+.footer {
+  margin-top: 52px;
+}
+.footer .footer__top {
+  margin-bottom: 72.8px;
+}
+.footer .footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__links .footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__links .footer__column .footer__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  vertical-align: middle;
+  color: #1f2025;
+  margin-bottom: 16px;
+}
+.footer .footer__links .footer__column .footer__item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  vertical-align: middle;
+  color: #8b8e99;
+  margin-bottom: 19px;
+}
+.footer .footer__links .footer__column .footer__apps {
+  display: flex;
+  align-items: center;
+}
+.footer .footer__links .footer__column .footer__app-link {
+  gap: 5px;
+}
+.footer .footer__links .footer__column .AppStore {
+  margin-inline: 29px;
+}
+.footer .footer__links .footer__column .footer__apps > a {
+  font-weight: 500;
+  font-size: 12.8px;
+  line-height: 15.36px;
+  vertical-align: middle;
+  color: #1f2025;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__socials {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 43px;
+}
+.footer .footer__socials .footer__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+  color: #1f2025;
+  margin-bottom: 16px;
+}
+.footer .footer__socials .footer__icon {
+  width: 32px;
+  height: 32px;
+  margin-top: 16px;
+}
+.footer .footer__bottom {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid black;
+  justify-content: space-between;
+}
+.footer .footer__bottom .footer__policies .footer__policy-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+  color: #1f2025;
+}
+.footer .footer__bottom .footer__copy {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  vertical-align: middle;
+  color: #8C8E98;
 }
 
 /* Modal oynaning o‘zi */

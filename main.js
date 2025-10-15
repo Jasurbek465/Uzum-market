@@ -51,13 +51,22 @@ openModal.addEventListener('click', (e) => {
   e.preventDefault();
   modal.style.display = 'flex';
 });
-
 closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });
-
 window.addEventListener('click', (e) => {
   if (e.target === modal) {
     modal.style.display = 'none';
   }
+});
+
+// SWIPER js
+var swiper = new Swiper('.mySwiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
 });
